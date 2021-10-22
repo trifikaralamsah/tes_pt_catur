@@ -1,0 +1,230 @@
+body{
+    background-image: url('Assets/background.jpg');             
+    height: 100%;
+    width: 100%;
+ }
+ .table{
+     height: 100%;
+ }
+ .table .browser{
+     height: 40%;
+ }
+ .table .thead{
+     height: 25%;
+ }
+ .table .alert{
+     height: 25%;
+     background-color: grey;
+ }
+ .table .chrome{
+     background-color:#EBBA4A;
+     opacity: 77%;
+     color: white;
+     font-family: 'Open Sans', sans-serif;
+ }
+ .chrome_img{
+    width: 21%;
+    margin-right: 9%;
+    fill: white;
+    margin-top: 10px;             
+ }
+ .firefox_img{
+    fill: white;
+    text-align: center;          
+    width: 62%;
+    margin-top: 5px;  
+ }
+ .edge_img{
+    fill: white;
+    text-align: center; 
+    width: 62%;    
+    margin-top: 5px;       
+ }
+ .safari_img{
+    fill: white;
+    text-align: center;
+    width: 62%;          
+    margin-top: 5px;  
+ }
+ .opera_img{
+    fill: white;
+    margin-left: 18pt;
+    width: 21%;
+    margin-top: 5px;         
+ }
+ .alert_1{
+     color:whitesmoke;
+     font-family: 'Open Sans', sans-serif;             
+ }
+ .triangle_img{
+    width: 4%;
+    fill: white;            
+ }
+ .table .firefox{
+     background-color:#E8A03E;
+     opacity: 77%;
+     width: 12%;
+     color: white;
+     font-family: 'Open Sans', sans-serif;
+ }
+ .table .edge{
+     background-color: #5AC6FA;
+     opacity: 77%;
+     width: 12%;
+     color: white;
+     font-family: 'Open Sans', sans-serif;
+ }
+ .table .safari{
+     background-color: #459CE3;
+     opacity: 77%;
+     width: 12%;
+     color: white;
+     font-family: 'Open Sans', sans-serif;
+ }
+ .table .opera{
+     background-color: #E3634D;
+     opacity: 77%;
+     width: 32%;
+     color: white;
+     font-family: 'Open Sans', sans-serif;
+ }
+
+ .download{
+     visibility: hidden;
+ }
+ .download_chrome{
+     visibility: hidden;
+ }
+ .download_opera{
+     visibility: hidden;
+ }
+ 
+ @media screen and (max-width: 600px) {
+    table.responsive {
+        width: 100%;
+    }
+    thead {
+        display: none;
+    }
+    .alert_1{
+        margin: 0;
+        padding: 0;
+        margin-left: -300px;
+    }
+    .table .chrome{
+        height: 72pt;
+    }
+    .table .firefox {
+        width: 100%;
+        height: 68pt;
+    }
+    .table .edge {
+        width: 100%;
+        height: 68pt;
+    }
+    .table .safari {
+        width: 100%;
+        height: 68pt;
+        padding-bottom: 4px;
+    }
+    .table .opera {
+        width: 100%;
+        height: 78pt;
+        margin-top: -7px;
+    }
+    .table .alert_1{
+        margin-bottom: -50px;
+        padding-bottom: 25px;
+    }
+    .table .alert button{
+        display: none;
+    }
+    .table .chrome button{
+        display: none;
+    }
+    .table .firefox button{
+        display: none;
+    }
+    .table .edge button{
+        display: none;
+    }
+    .table .safari button{
+        display: none;
+    }
+    .table .opera button{
+        display: none;
+    }
+    .table .alert .triangle_img{
+        float: left;
+        width: 17%;
+        margin-right: 10pt;
+    }
+    .chrome_img{
+        float: left;
+        width: 15%;
+        margin-top: 4pt;
+        margin-right: 30px;
+    }
+    .firefox_img{
+        float: left;
+        width: 15%;
+        margin-right: 30px;
+    }
+    .table .edge .edge_img{
+        width: 15%;
+        float: left;
+        margin-right: 30px;
+    }
+    .table .safari .safari_img{
+        float: left;
+        width: 15%;
+        margin-right: 30px;
+    }
+    .table .opera .opera_img{
+        float: left;
+        width: 15%;
+        margin-left: -0.2px;
+        margin-right: 30px;
+    }
+    .download{
+        display: inline-block;
+        visibility: unset;
+        fill: white;
+        margin-top: -80pt;
+        margin-left: 220pt;
+    }
+    .download_chrome{
+        fill: white;
+        margin-top: -80pt;
+        margin-right: 48pt;
+        visibility: unset;
+    }
+    .download_opera{
+        fill: white;
+        margin-top: -75pt;
+        margin-left: 268pt;
+        visibility: unset;
+    }
+    h6{
+        text-align: left;
+        padding-top: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    p{
+        text-align: left;
+        font-family: 'Open Sans', sans-serif;
+    }
+    br{
+        display: none;
+    }
+    td {
+        display: block;
+        border-right: 1px solid #e1edff;
+    }
+    td::before {
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        content: attr(data-header);
+    }
+}
